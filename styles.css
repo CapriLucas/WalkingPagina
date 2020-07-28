@@ -98,22 +98,53 @@ body{
 
 .mail-newsletter{
     display: flex;
+    align-items: center;
     
 }
 .mail-newsletter input{
     margin: 0;
-    padding: 0.8rem;
+    padding: 7.12px;
 }
 .mail-newsletter input[type="email"]{
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 5px 0 0 5px;
     border:none;
 }
 .mail-newsletter input[type="submit"] {
     color:white;
     background-color: #AD4D57;
     border: none;
-    border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0 5px 5px 0;
+    display:none;
 }
+.mail-newsletter i{
+    font-size: 32px;
+    color:white;
+    background-color: #AD4D57;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+/*INDEX*/
+
+.portada{
+    
+    color: white;
+    height: 500px;
+    background-image: url(/src/3.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.portada:hover{
+    font-size:  100px;
+    animation-delay: 50ms;
+}
+
 
 /*GALERIA*/
 
