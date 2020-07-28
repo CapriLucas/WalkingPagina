@@ -127,25 +127,36 @@ body{
 /*INDEX*/
 
 .portada{
-    
-    color: white;
-    height: 500px;
-    background-image: url(/src/3.jpg);
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0;
+    align-items: center;    
 
 }
 
 .portada:hover{
-    font-size:  100px;
-    animation-delay: 50ms;
 }
 
+.entrada{
+    display: flex;
+    width: 50%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
 
+.entrada img{
+    border-radius: 10px 0 0 10px;
+    width: 55%;
+    object-fit: cover;
+}
+.texto-entrada{
+    padding: 0 20px;
+}
+.texto-entrada h3{
+    text-align: center;
+}
 /*GALERIA*/
 
 .galeria{
@@ -201,3 +212,25 @@ body{
     }
 }
 
+/*VIAJES*/
+
+.entrada-viaje{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.img-1{
+    border-radius: 10px 0 0 10px;
+    width: 30%;
+    object-fit: cover;
+}
+.img-2{
+    border-radius:0 10px 10px 0;
+    width: 30%;
+    object-fit: cover;
+}
