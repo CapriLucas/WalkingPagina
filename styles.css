@@ -6,9 +6,9 @@ a{
     text-decoration: none;
     color: black;
 }
-.fondo-blanco{
+/* .fondo-gris{
     background-color: rgb(182, 178, 178);
-}
+} */
 
 .titulo{
     width: fit-content;
@@ -37,6 +37,7 @@ body{
     align-items: center;
     justify-content: space-between;
     margin-top: 0;
+    border-bottom: black 1px solid;
 }
 .header img{
     width: 110px;
@@ -55,9 +56,23 @@ body{
     border-radius: 5px;
 }
 
+.navegador a:hover{
+    background-color: rgb(202, 202, 202);
+}
+
 .navegador i{
     font-size: 30px;
 }
+/*FOOTER*/
+.test{
+    width: 100%;
+}
+.footer{
+    border-top: black 1px solid;
+    margin-bottom: 0;
+    height: 200px;
+}
+
 /*GALERIA*/
 
 .galeria{
