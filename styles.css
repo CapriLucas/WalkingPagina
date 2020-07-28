@@ -1,26 +1,64 @@
 *{
     font-family: 'Alegreya Sans SC', sans-serif;
 }
-
-.objeto{
-    height: 2px;
-    background-color: rgb(0, 0, 0,0.5);
+/*USOS GENERALES*/
+a{
+    text-decoration: none;
+    color: black;
+}
+.fondo-blanco{
+    background-color: rgb(182, 178, 178);
 }
 
 .titulo{
     width: fit-content;
-    margin: 10px auto;
+    margin: auto;
     font-size: 75px;
     text-align: center;
 }
 
 body{
-    background-color: #C1C1BD;
+    background-color: #f3f3f1;
 }
 .container{
     width: 80%;
     margin: 10px auto;
 }
+
+/*HEADER*/
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+}
+.header img{
+    width: 110px;
+    margin: 10px auto;
+}
+
+.navegador{
+    display:  flex;
+    align-items: center;
+
+}
+.navegador a{
+    margin: 0 5px;
+    padding: 1px;
+    border: rgba(255, 255, 255, 0.101001) solid 0.5px;
+    border-radius: 5px;
+}
+
+.navegador i{
+    font-size: 30px;
+}
+/*GALERIA*/
 
 .galeria{
     display: flex;
@@ -74,3 +112,4 @@ body{
         width: 80%;
     }
 }
+
