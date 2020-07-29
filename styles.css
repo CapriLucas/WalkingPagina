@@ -1,236 +1,262 @@
-*{
-    font-family: 'Alegreya Sans SC', sans-serif;
+* {
+  font-family: "Alegreya Sans SC", sans-serif;
 }
 /*USOS GENERALES*/
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
-.fondo-gris{
-    background-color: white;
-    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
-}
-
-.titulo{
-    width: fit-content;
-    margin: auto;
-    font-size: 75px;
-    text-align: center;
+.fondo-gris {
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.75);
 }
 
-body{
-    background-color: #f3f3f1;
+.titulo {
+  width: fit-content;
+  margin: auto;
+  font-size: 75px;
+  text-align: center;
 }
-.container{
-    width: 80%;
-    margin: 10px auto;
+
+body {
+  background-color: #f3f3f1;
+}
+.container {
+  width: 80%;
+  margin: 10px auto;
 }
 
 /*HEADER*/
 
-.logo{
-    display: flex;
-    align-items: center;
-    width: fit-content;
+.logo {
+  display: flex;
+  align-items: center;
+  width: fit-content;
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 0;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
 }
-.header img{
-    width: 110px;
-    margin: 10px auto;
-}
-
-.navegador{
-    display:  flex;
-    align-items: center;
-
-}
-.navegador a{
-    margin: 0 5px;
-    padding: 1px;
-    border: rgba(255, 255, 255, 0.101001) solid 0.5px;
-    border-radius: 5px;
+.header img {
+  width: 110px;
+  margin: 10px auto;
 }
 
-.navegador a:hover{
-    background-color: rgb(202, 202, 202);
+.navegador {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+}
+.navegador a {
+  margin: 0 5px;
+  padding: 1px;
+  border: rgba(255, 255, 255, 0.101001) solid 0.5px;
+  border-radius: 5px;
 }
 
-.navegador i{
-    font-size: 30px;
-}
-/*FOOTER*/
-.footer{
-    border-top: black 1px solid;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navegador a:hover {
+  background-color: rgb(202, 202, 202);
 }
 
-.footer h4{
-    align-self: flex-start;
-    font-weight: 100;
+.navegador i {
+  font-size: 30px;
 }
 
-.footer img{
-    width: 110px;
-    margin: 10px auto;
+@media screen and (max-width: 1000px) {
+  .logo h1 {
+    display: none;
+  }
 }
-
-.left-footer{
-    display: flex;
+@media screen and (max-width: 600px) {
+  .header {
     flex-direction: column;
-}
-.navegador-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-
-.mail-newsletter{
-    display: flex;
-    align-items: center;
+  }
+  .navegador{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navegador-footer a{
+    display: none;
     
+  }
 }
-.mail-newsletter input{
-    margin: 0;
-    padding: 7.12px;
+
+/*FOOTER*/
+.footer {
+  border-top: black 1px solid;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.mail-newsletter input[type="email"]{
-    border-radius: 5px 0 0 5px;
-    border:none;
+
+.footer h4 {
+  align-self: flex-start;
+  font-weight: 100;
+}
+
+.footer img {
+  width: 110px;
+  margin: 10px auto;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: column;
+}
+.navegador-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mail-newsletter {
+  display: flex;
+  align-items: center;
+}
+.mail-newsletter input {
+  margin: 0;
+  padding: 7.12px;
+}
+.mail-newsletter input[type="email"] {
+  border-radius: 5px 0 0 5px;
+  border: none;
 }
 .mail-newsletter input[type="submit"] {
-    color:white;
-    background-color: #AD4D57;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    display:none;
+  color: white;
+  background-color: #ad4d57;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  display: none;
 }
-.mail-newsletter i{
-    font-size: 32px;
-    color:white;
-    background-color: #AD4D57;
-    border: none;
-    border-radius: 0 5px 5px 0;
+.mail-newsletter i {
+  font-size: 32px;
+  color: white;
+  background-color: #ad4d57;
+  border: none;
+  border-radius: 0 5px 5px 0;
 }
 
 /*INDEX*/
 
-.portada{
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    align-items: center;    
-
+.portada {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  align-items: center;
 }
 
-.portada:hover{
+.entrada {
+  display: flex;
+  width: 50%;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
 }
 
-.entrada{
-    display: flex;
-    width: 50%;
-    height: 200px;
-    background-color: white;
-    border-radius: 10px;
-    margin: 10px;
+.entrada img {
+  border-radius: 10px 0 0 10px;
+  width: 55%;
+  object-fit: cover;
 }
-
-.entrada img{
-    border-radius: 10px 0 0 10px;
-    width: 55%;
-    object-fit: cover;
+.texto-entrada {
+  padding: 0 20px;
 }
-.texto-entrada{
-    padding: 0 20px;
+.texto-entrada h3 {
+  text-align: center;
 }
-.texto-entrada h3{
-    text-align: center;
+@media screen and (max-width: 750px){
+  .entrada{
+    width: 80%;
+  }
 }
 /*GALERIA*/
 
-.galeria{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.cuadro{
-    width: 30%;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 5px solid #ffffff;
-    border-radius: 10px;
-    background-color: white;
-    -webkit-box-shadow: 28px 31px 19px -22px rgba(0,0,0,1);
-    -moz-box-shadow: 28px 31px 19px -22px rgba(0,0,0,1);
-    box-shadow: 28px 31px 19px -22px rgba(0,0,0,1);
-
+.cuadro {
+  width: 30%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid #ffffff;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 28px 31px 19px -22px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 28px 31px 19px -22px rgba(0, 0, 0, 1);
+  box-shadow: 28px 31px 19px -22px rgba(0, 0, 0, 1);
 }
 
-.cuadro img:hover{
-    cursor: pointer;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+.cuadro img:hover {
+  cursor: pointer;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-.cuadro h2{
-    margin: 5px;
-}
-
-.cuadro img{
-    margin: 10px auto;
-    width: 90%;
-    object-fit: cover;
-    border-radius: 0 30px;
+.cuadro h2 {
+  margin: 5px;
 }
 
-@media screen and (max-width: 1200px){
-    .cuadro{
-        width: 45%;
-    }
+.cuadro img {
+  margin: 10px auto;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 0 30px;
 }
 
-@media screen and (max-width: 800px){
-    .cuadro{
-        width: 80%;
-    }
+@media screen and (max-width: 1200px) {
+  .cuadro {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cuadro {
+    width: 80%;
+  }
 }
 
 /*VIAJES*/
 
-.entrada-viaje{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    height: 200px;
-    background-color: white;
-    border-radius: 10px;
-    margin: 10px;
+.entrada-viaje {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
 }
 
-.img-1{
-    border-radius: 10px 0 0 10px;
-    width: 30%;
-    object-fit: cover;
+.img-1 {
+  border-radius: 10px 0 0 10px;
+  width: 30%;
+  object-fit: cover;
 }
-.img-2{
-    border-radius:0 10px 10px 0;
-    width: 30%;
-    object-fit: cover;
+.img-2 {
+  border-radius: 0 10px 10px 0;
+  width: 30%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 750px){
+  .entrada-viaje{
+    width: 80%;
+    font-size: 85%;
+  }
 }
