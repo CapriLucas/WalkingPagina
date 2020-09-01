@@ -1,9 +1,14 @@
-import { hamburgerMenu, responsiveHamburger } from "./menu_hamburguesa.js";
+import {
+	hamburgerMenu,
+	responsiveHamburger,
+	clickEnlace,
+} from "./menu_hamburguesa.js";
 
 const d = document;
 d.addEventListener("DOMContentLoaded", e => {
 	hamburgerMenu(".hamburger", ".navegador", ".menu");
 	responsiveHamburger(".navegador", "(max-width: 640px)");
+	clickEnlace(".menu");
 });
 
 /*	responsiveMedia(

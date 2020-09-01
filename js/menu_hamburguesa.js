@@ -19,7 +19,7 @@ export function hamburgerMenu(claseBoton, claseNavHeader, claseMenu) {
 		if (e.target.matches(claseBoton) || e.target.matches(`${claseBoton} *`)) {
 			d.querySelector(claseBoton).classList.toggle("is-active");
 			if (estado) {
-				$menu.innerHTML = null;
+				$menu.innerHTML = ``;
 				estado = false;
 			} else {
 				$menu.innerHTML = nav;
@@ -45,4 +45,13 @@ export function responsiveHamburger(claseNavHeader, mediaQuery) {
 	};
 	breakpoint.addListener(responsive);
 	responsive(breakpoint);
+}
+
+export function clickEnlace(claseMenu) {
+	d.addEventListener("click", e => {
+		if (e.target.matches(`${claseMenu} *`)) {
+			estado = false;
+			console.log("sape");
+		}
+	});
 }
