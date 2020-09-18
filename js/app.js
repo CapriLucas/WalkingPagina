@@ -1,3 +1,4 @@
+import { carrouselDeImagenes } from "./carrousel.js";
 import {
 	hamburgerMenu,
 	responsiveHamburger,
@@ -9,6 +10,7 @@ d.addEventListener("DOMContentLoaded", e => {
 	hamburgerMenu(".hamburger", ".navegador", ".menu");
 	responsiveHamburger(".navegador", "(max-width: 640px)");
 	clickEnlace(".menu");
+	carrouselDeImagenes(".carrousel", ".circulo", ".left-slide", ".right-slide");
 });
 
 /*	responsiveMedia(
